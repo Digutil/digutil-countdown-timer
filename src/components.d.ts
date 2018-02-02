@@ -6,32 +6,32 @@
 
 
 import {
-  MyComponent as MyComponent
-} from './components/my-component/my-component';
+  DigutilCountdownTimer as DuCountdownTimer
+} from './components/du-countdown-timer/du-countdown-timer';
 
 declare global {
-  interface HTMLMyComponentElement extends MyComponent, HTMLElement {
+  interface HTMLDuCountdownTimerElement extends DuCountdownTimer, HTMLElement {
   }
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  var HTMLDuCountdownTimerElement: {
+    prototype: HTMLDuCountdownTimerElement;
+    new (): HTMLDuCountdownTimerElement;
   };
   interface HTMLElementTagNameMap {
-    "my-component": HTMLMyComponentElement;
+    "du-countdown-timer": HTMLDuCountdownTimerElement;
   }
   interface ElementTagNameMap {
-    "my-component": HTMLMyComponentElement;
+    "du-countdown-timer": HTMLDuCountdownTimerElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "my-component": JSXElements.MyComponentAttributes;
+      "du-countdown-timer": JSXElements.DuCountdownTimerAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
-      first?: string;
-      last?: string;
+    export interface DuCountdownTimerAttributes extends HTMLAttributes {
+      timeTarget?: string;
     }
   }
 }
 
+declare global { namespace JSX { interface StencilJSX {} } }

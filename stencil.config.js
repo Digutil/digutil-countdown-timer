@@ -1,8 +1,8 @@
 exports.config = {
-  namespace: 'mycomponent',
+  namespace: 'du-countdown-timer',
   generateDistribution: true,
   bundles: [
-    { components: ['my-component'] }
+    { components: ['du-countdown-timer'] }
   ]
 };
 
